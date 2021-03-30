@@ -20,7 +20,7 @@ def detect_faces(image):
     #cv2.cvtColor() method is used to convert an image from one color space to another. There are more than 150 color-space conversion methods available in OpenCV. We will use some of color space conversion codes below.
     img=cv2.cvtColor(new_image,1)
     gray=cv2.cvtColor(new_image,cv2.COLOR_BGR2GRAY)
-    faces = face_cascade.detectMultiScale(gray, 1.1, 1)
+    faces = face_cascade.detectMultiScale(gray, 1.1, 4)
     for (x,y,w,h) in faces:
         cv2.rectangle(img,(x,y),(x+w,y+h),(255,0,0),2)
     return img,faces
