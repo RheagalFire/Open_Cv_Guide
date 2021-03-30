@@ -99,7 +99,7 @@ if __name__ == '__main__':
             cv2.rectangle(img,(x,y),(x+w,y+h),(0,255,0),2)
         return img,eyes
             ''')
-    if(choice=='cartonize'):
+    if(choice=='Cartonize'):
         if(image_file):
             img=load_image(image_file)
             placeholder=st.image(img)
